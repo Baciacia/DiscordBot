@@ -22,7 +22,7 @@ import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 public class DiscordBot {
 
     public static void main(String[] args) {
-        String Token = "MTExMTIwNDIxMDY4MDI3OTA5MA.GNy-22.bItDIn8nIvJol-amnESwrxG5zZ_72KepQw6A-A";
+        String Token = "";
         JDABuilder jdaBuilder = JDABuilder.createDefault(Token);
         JDA bot = jdaBuilder.enableIntents(GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_MESSAGES)
                 .addEventListeners(new ReadyEventL(), new MessageEventL(), new AnswerSlashEventL())
